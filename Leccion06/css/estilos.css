@@ -1,0 +1,27 @@
+h1{
+    color: #e476ff;
+    background-color: beige;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-decoration: overline under;
+}
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+}
+.texto{
+    text-align: justify;
+    /*direction: rtl;*/
+    /*text-decoration: underline; *//*aqui se cambia el texto, poner subarayado, negrilla, tachar el texto etc... ctrl+space*/
+    text-indent: 30px;
+    line-height: 1.5;/*distanciamiento entre lineas de texto*/
+    white-space: normal; /*quita los enters automaticos con nowspace y se sale del div, con normal se acomodan*/
+    text-shadow: 1px 1px 2px #ced4da;
+}

@@ -1,0 +1,142 @@
+h1{
+    text-align: center;
+    color: #457b9d;
+}
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    overflow: auto;/*esta es la maseficiente manera de hacerlo, ya que automaticamente detecta si tiene o no que poner una barra de scroll lateral*/
+    margin:  auto;
+    border: 3px dashed #a8dadc;
+}
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    background-color: #a8dadc;
+    border: 1px solid #457b9d;
+    height: 50px;
+    padding: 5px;
+    display: inline-block;
+}
+.menu{
+    list-style-type:none ;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    background-color: #63946d;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+
+/*
+
+
+
+div.contenedor.flotado{
+    float: left;
+}
+div.contenedor.flotado.contenedor1{
+    border: 3px dashed greenyellow;
+}
+div.contenedor.flotado.contenedor2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+div.contenedor.contenedor3{
+    clear: both;
+    border: 3px dashed darkorange;
+    margin: auto;
+}
+
+
+
+
+/*div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;/*para los overflow toca especificar un auto para mayor orden tanto en eje x como eje y*
+    margin: auto;
+   /* overflow: visible;*/
+   /*overflow: hidden;/*el texto que no cabe no se muestra*
+   /*overflow: scroll;/*se muestra todo el texto con barras de scroll*
+   overflow: auto;/*esta es la maseficiente manera de hacerlo, ya que automaticamente detecta si tiene o no que poner una barra de scroll lateral*
+   overflow-y: visible; /*tambien existen en eje x y y*
+}*/
+
+
+
+/*div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 30%;
+    margin: auto;
+}
+img.imagen{
+    width: 100%;
+    opacity: 0.2;/*1 sin opacidad, 0 con toda la opacidad*
+}
+div.centro{
+    position: absolute;
+    top: 50%;
+    /*border: 1px solid blueviolet;*
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}*/
+
+
+/*div{
+    position: absolute;/*static es el que siempre sale, relative parte de la posicion inicial y despues se mueve con los valores de top left etc..., fixed se muevo desde las esquinas, desde la esquina superior izquierda baja 100 y se mueve hacia la derecha 50 y siempre se queda en la pantalla asi se baje el cursor
+    Absolute se queda en el lugar que se le asigne con pixeles, y se queda ahi de manera absoluta*
+    top: 0px;
+    left: 0px;
+    max-width: 400px;/*se puede usar max widht para que se ajuste al tamaño de la pantalla, o % de 50 para que tenga mas flexibilidad y como maximo el texto ocupa ese %*
+    border: 3px solid firebrick;
+    margin: auto;/*se centra el elemento teniendo igual cantidad de pixeles de lado izq y der, y por ser 50% ocupa siempre el 50% de la pantalla*
+}*/
+/*div{
+    position: sticky;/*el sticky siempre se queda arriba y nunca afecta si se baja o no el scroll o depende de que altura se le de desde top hasta left*
+    position: -webkit-sticky;/*esto es por navegadores como safari, y de igual forma no funciona en internet explore viejos*
+    top: 0px;
+    border: 3px solid firebrick;
+}
+/*div.relative{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 150px;
+    border: 3px solid aquamarine;
+}*/
+
+/*div.estatico{
+    position: static;
+    top: 10px;
+    padding: 15px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke;
+}
+div.relativo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+}
+div.absoluto{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+    z-index: 1000;/*INDEX SIRVE PARA QUE UN OBJETO QUEDE AL FONDO O AL FRENTE DE LA PAGINA SUPERPONIENDOSE A LOS DEMAS
+}

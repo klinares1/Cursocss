@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e6346d;
+}
+div.contenedor{
+    display: flex;/*esto hace que se acomoden de manera lineal hacia la izquierda*/
+    background-color: #560bad;
+    /* flex-direction: column-reverse;tanto column como column reverse sirven para mostrarlo en columna en diferente orden */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    align-content: center;
+}
+div.contenedor > p{
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1,5em;
+}
